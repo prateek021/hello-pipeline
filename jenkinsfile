@@ -4,9 +4,11 @@ pipeline
     stages
     {
         stage ( 'print hello' )
-        step
         {
-            sh 'echo hello'
+            steps
+            {
+                sh 'echo hello'
+            }
         }
     }
 }
